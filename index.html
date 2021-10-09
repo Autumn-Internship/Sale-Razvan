@@ -1,52 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Film Review</title>
+<link rel="stylesheet" type="text/css" href="Alt.css">
+<title> Indicatori economici state </title>
+<meta charset="utf-8"/>
 </head>
+
 <body>
-<main>
-<center><h1> Review "Fight Club"</h1></center>
-<form>
-<fieldset>
-<label for="Nota"> Email </label>
-<input type="email" id="Email" name="Email" required autofocus size="15"><br><br>
-
-<label for="Data"> When did you watch it? </label>
-<input type="date" id="Data" name="Data" min="1" max="5"><br>
-
-<h2>Rating the movie</h2>
-<label for="1"> 1 </label>
-<input type="radio" id="1" name="Rating">
-<label for="1"> 2 </label>
-<input type="radio" id="2" name="Rating">
-<label for="1"> 3 </label>
-<input type="radio" id="3" name="Rating">
-<label for="1"> 4 </label>
-<input type="radio" id="4" name="Rating">
-<label for="1"> 5 </label>
-<input type="radio" id="5" name="Rating"><br>
-
-<h2>The positives</h2>
-<label for="1"> Acting </label>
-<input type="checkbox" id="Acting" name="Acting">
-<label for="1"> Script </label>
-<input type="checkbox" id="Script" name="Script">
-<label for="1"> Production </label>
-<input type="checkbox" id="Production" name="Production">
-<label for="1"> Visual Effects </label>
-<input type="checkbox" id="VisualEffects" name="VisualEffects">
-<label for="1"> Cinematography </label>
-<input type="checkbox" id="Cinematography" name="Cinematography"><br><br>
-
-<textarea id="Nume" name="Nume" cols="30" placeholder="Share your thought with us!" maxlength="1000"></textarea><br><br>
-
-<input type="submit" value="Submit">
-</fieldset>
+<div class="imgFundal">
+<h2> Sale Razvan </h2>
+<img style="float: left; border: 0.6vh solid black; margin-left: 1vw; margin-right: 2vw;height: 65vh; width:25vw;" src="https://i.gyazo.com/9632f575450e7b5fbc9234218e58ff7d.jpg">
+<h2 style="font-size: 1.5vw;"> Numele meu este Sale Razvan, sunt absolvent la Facultatea de Stiinte Economice si Gestiunea Afacerilor, specializarea Informatica Economica. In prezent sunt intern la compania Endava<br><br> Dupa absolvirea examenelor nationale am optat pentru Liceul de Informatica 
+"Tiberiu Popoviciu" unde mi-am dezvoltat pasiunea pentru informatica ce m-a determinat sa continui studiile pe aceasta ramura. <br><br> Proiecte Personale: </h2>
+<h1 style="margin-bottom: 7.5vh;"> Scrie-mi un mesaj ! </h1>
+<form method="GET">
+<h3 style="margin-left: 3vw;">Nume</h3> 
+<h3 style="margin-left: 12.5vw;">Email</h3>
+<h3 style="margin-left: 16.5vw;">Mesaj</h3>
+<h3 style="margin-left: 17.5vw;">Submit</h3>
+<textarea name="Nume" style="border: 0.25vh solid black; margin-left: 0vw; height: 7.5vh; width: 10vw; font-weight: bold; resize:none;" required></textarea>
+<textarea name="Email" style="border: 0.25vh solid black; margin-left: 5.5vw; height: 7.5vh; width: 10vw; font-weight: bold; resize:none" required></textarea>
+<textarea name="Mesaj" style="border: 0.25vh solid black; margin-left: 5vw; height: 7.5vh; width: 20vw; font-weight: bold; resize: none;" required></textarea>
+<input class="buhton" type="submit" name="Submit" value="APASA" style="margin-left: 5vw; font-weight: bold; position: relative; bottom: 3.5vh; margin-bottom: 7.5vh;">
 </form>
-
-</main>
+</div>
 </body>
 </html>
