@@ -1,0 +1,4 @@
+dummyToIgnore.html
+logs/
+bin/
+*.log
