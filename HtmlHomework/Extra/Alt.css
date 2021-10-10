@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+
+body {
+margin: 0;
+background-image: url("https://webgradients.com/public/webgradients_png/089%20Premium%20White.png");
+background-size: cover;
+}
+
+header{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+header a {
+background-color: silver;
+font-weight: bold;
+color: black;
+font-size: 3vh;
+padding-left: 13.79vw;
+padding-right: 13.79vw;
+padding-top: 2vh;
+padding-bottom: 2vh;
+border: 0.25vh solid black;
+font-family: 'Federo';
+text-transform: uppercase;
+text-decoration: none;
+}
+
+header a.active {
+	background-color: dodgerblue;
+	color: white;	
+}
+
+.pozaCV {
+	border: 0.6vh solid black; 
+	height: 65vh; 
+	width: 25vw;
+	margin: 0 2vw 0 1vw;
+}
+
+.pozaEndava {
+	height: 25vh;
+	width: 35vw;
+}
+
+.pozaGithub {
+	height: 4vh;
+	width: 4.5vw;
+}
+
+.pozaLinkedIn {
+	height: 4vh;
+	width: 5.5vw;
+}
+
+.pozaGmail {
+	height: 4vh;
+	width: 3.3vw;
+}
+
+main h1 {
+font-size: 3vh; 
+font-weight: bold; 
+font-family: 'Federo', sans-sarif;
+align-self: flex-start;
+}
+
+.flexRow {
+margin-top: 2.5vh;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.flexColumn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.flexRow h2 {
+font-size: 3vh; 
+font-weight: bold; 
+font-family: 'Federo';
+word-wrap: break-word;
+}
+
+footer {
+background-color: silver;
+display: flex;
+margin: 5.56vh 0 0 0;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border: 0.2vh solid black;
+}
+
+footer p, a {
+font-weight: bold;
+margin: 1vh 0vh 1vh 0vh;
+color: black;
+font-size: 2vh;
+font-family: 'Federo';
+text-decoration: none;
+}
