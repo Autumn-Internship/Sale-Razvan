@@ -1,0 +1,156 @@
+:root {
+    --Font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+    body {
+        margin: 0;
+        background-image: url("https://webgradients.com/public/webgradients_png/089%20Premium%20White.png");
+        background-size: cover;
+        height: 100%;
+        }
+    
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    header h1 {
+        width: 40%;
+        text-align: center;
+        font-family: var(--Font);
+        margin: 2.5vh 0vh 2.5vh 0vh;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    
+    footer button {
+        font-weight: bold;
+        color: black;
+        font-size: 3vh;
+        padding: 2vh 15vw;
+        outline: 0.2vh solid black;
+        font-family: var(--Font);
+        margin-top: 5.5vh;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .container h2, input {
+        font-family: var(--Font);
+        font-size: 1.25vh;
+    }
+    
+    .classEmail input, .classDate input {
+        width: 15vw;
+        height: 4vh;
+        text-align: inherit;
+    }
+    
+    .classRating input, .classRating label {
+        width: 1vw;
+        height: 1.75vh;
+        font-size: 2.75vh;
+        text-align: inherit;
+        margin: 0;
+    }
+    
+    .positivesContainer {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        font-size: 1.5vh;
+        text-align: center;
+    }
+    
+    .positivesContainer input {
+        height: 2.5vh;
+        width: 2vw;
+        margin-left: 0.5vw;
+    }
+    
+    .classTextArea textarea{
+        width: 25vw;
+        height: 7.5vh;
+        font-family: var(--Font);
+        font-size: 1.5vh;
+        text-align: center;
+    }
+    
+    textarea:focus, .classEmail input:focus, .classDate input:focus {
+        outline: 0.25vh solid orangered;
+        border: 0;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.3), 0 17px 50px 0 rgba(0,0,0,0.3);
+        transition: outline 0.4s;
+        transition: box-shadow 0.5s;
+    }
+    
+    footer button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.3), 0 17px 50px 0 rgba(0,0,0,0.3);
+        transition: box-shadow 0.5s;
+    }
+    
+    input:required {
+        outline: 0.25vh solid red;
+        border: 0;
+    }
+    
+    h1::first-letter{
+        color: orangered;
+        font-size: 5vh;
+    }
+    h2:first-letter, button:first-letter, textarea:first-letter, label::first-letter {
+        color: orangered;
+        font-size: 3vh;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        header h1 {
+            width: 70%;
+            font-size: 3.5vh;
+        }
+        footer button {
+            margin-top: 4vh;
+        }
+        .classTextArea textarea{
+            margin-top: 1vh;
+        }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+        header h1 {
+            width: 100%;
+            font-size: 2vh;
+        }
+        footer button {
+            margin-top: 2.5vh;
+        }
+        .classTextArea textarea{
+            width: 50vw;
+        }
+        .classEmail input, .classDate input {
+            width: 35vw;
+        }
+        .classRating input, .classRating label {
+            width: 3vw;
+            height: 1.5vh;
+        }
+        .positivesContainer input {
+            height: 2vh;
+            width: 3.75vw;
+    }
+}
