@@ -4,49 +4,76 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="altForm.css">
 <title>Film Review</title>
+<header>
+<h1>Generic movie review web site</h1>
+</header>
 </head>
+
 <body>
 <main>
-<center><h1> Review "Fight Club"</h1></center>
 <form>
-<fieldset>
-<label for="Nota"> Email </label>
-<input type="email" id="Email" name="Email" required autofocus size="15"><br><br>
 
-<label for="Data"> When did you watch it? </label>
-<input type="date" id="Data" name="Data" min="1" max="5"><br>
+<div class="container">
 
+<div class="classEmail">
+<h2> Email </h2>
+<p><input type="email" id="Email" name="Email" required autofocus size="15" placeholder="Input your Email.."></p>
+</div>
+
+<div class="classDate">
+<h2> When did you watch it? </h2>
+<p><input type="date" id="Data" name="Data" min="1" max="5"></p>
+</div>
+
+<div class="classRating">
 <h2>Rating the movie</h2>
 <label for="1"> 1 </label>
 <input type="radio" id="1" name="Rating">
-<label for="1"> 2 </label>
+<label for="2"> 2 </label>
 <input type="radio" id="2" name="Rating">
-<label for="1"> 3 </label>
+<label for="3"> 3 </label>
 <input type="radio" id="3" name="Rating">
-<label for="1"> 4 </label>
+<label for="4"> 4 </label>
 <input type="radio" id="4" name="Rating">
-<label for="1"> 5 </label>
-<input type="radio" id="5" name="Rating"><br>
+<label for="5"> 5 </label>
+<input type="radio" id="5" name="Rating">
+</div>
 
+<div class="classPositives">
 <h2>The positives</h2>
-<label for="1"> Acting </label>
+
+<label class="positivesContainer" for="Acting">Acting
 <input type="checkbox" id="Acting" name="Acting">
-<label for="1"> Script </label>
+</label>
+
+<label class="positivesContainer" for="Script">Script
 <input type="checkbox" id="Script" name="Script">
-<label for="1"> Production </label>
+</label>
+
+<label class="positivesContainer" for="Production">Production
 <input type="checkbox" id="Production" name="Production">
-<label for="1"> Visual Effects </label>
+</label>
+
+<label class="positivesContainer" for="VisualEffects">Visual Effects
 <input type="checkbox" id="VisualEffects" name="VisualEffects">
-<label for="1"> Cinematography </label>
-<input type="checkbox" id="Cinematography" name="Cinematography"><br><br>
+</label>
 
-<textarea id="Nume" name="Nume" cols="30" placeholder="Share your thought with us!" maxlength="1000"></textarea><br><br>
+<label class="positivesContainer" for="Cinematography">Cinematography
+<input type="checkbox" id="Cinematography" name="Cinematography">
+</label>
+</div>
 
-<input type="submit" value="Submit">
-</fieldset>
+<div class="classTextArea">
+<p><textarea id="Nume" name="Nume" cols="30" placeholder="Share your thought with us!" maxlength="1000"></textarea></p>
+</div>
 </form>
 
 </main>
+</div>
+<footer>
+<button>Submit</button>
+</footer>
 </body>
 </html>
