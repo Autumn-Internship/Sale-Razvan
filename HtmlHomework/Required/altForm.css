@@ -3,51 +3,45 @@
     min-height: 100%;
 }
 
-* {
+    * {
     box-sizing: border-box;
 }
 
     body {
         margin: 0;
-        background-image: url("https://webgradients.com/public/webgradients_png/089%20Premium%20White.png");
-        background-size: cover;
         height: 100%;
+        background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b0bb084-0057-48cf-92b4-7319629b576c/dak6w83-a85c2cdd-8931-41b5-9325-c0be1ab95ced.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRiMGJiMDg0LTAwNTctNDhjZi05MmI0LTczMTk2MjliNTc2Y1wvZGFrNnc4My1hODVjMmNkZC04OTMxLTQxYjUtOTMyNS1jMGJlMWFiOTVjZWQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.tq22y3EWx8ssprPNmSg99C0XPIQ_QplW3Cs14y_GgbQ");
+        background-size: cover;
+        opacity: 0.9;
         }
     
-    header{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    
-    header h1 {
-        width: 40%;
-        text-align: center;
+    h1 {
+        width: 75%;
         font-family: var(--Font);
         margin: 2.5vh 0vh 2.5vh 0vh;
     }
     
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
-    
-    footer button {
+    button {
         font-weight: bold;
         color: black;
         font-size: 3vh;
-        padding: 2vh 15vw;
-        outline: 0.2vh solid black;
+        padding: 2vh 4vw;
+        background-color: #EAEAEA;
         font-family: var(--Font);
-        margin-top: 5.5vh;
+        margin-bottom: 3.5vh;
     }
     
     .container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         text-align: center;
+        background-image: url("https://webgradients.com/public/webgradients_png/089%20Premium%20White.png");
+        background-size: cover;
+        width: 50%;
+        margin: 4.8vh auto;
+        border: 0.3vh solid black;
     }
     
     .container h2, input {
@@ -55,7 +49,7 @@
         font-size: 1.25vh;
     }
     
-    .classEmail input, .classDate input {
+    .classEmail input, .classDate input, .classTitle input {
         width: 15vw;
         height: 4vh;
         text-align: inherit;
@@ -91,7 +85,7 @@
         text-align: center;
     }
     
-    textarea:focus, .classEmail input:focus, .classDate input:focus {
+    textarea:focus, .classEmail input:focus, .classDate input:focus, .classTitle input:focus {
         outline: 0.25vh solid orangered;
         border: 0;
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.3), 0 17px 50px 0 rgba(0,0,0,0.3);
@@ -99,7 +93,7 @@
         transition: box-shadow 0.5s;
     }
     
-    footer button:hover {
+    button:hover {
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.3), 0 17px 50px 0 rgba(0,0,0,0.3);
         transition: box-shadow 0.5s;
     }
