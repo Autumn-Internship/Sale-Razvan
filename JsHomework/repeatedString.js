@@ -13,7 +13,7 @@ function countA (array) {
 }
 
 let rep = Math.floor(n/s.length); // Obtinem de cate ori se poate repeta (intreg), in exemplul prezent 3 ori
-let rem = n - rep*s.length; // Obtinen diferenta (daca exista), in exemplul prezent 2
+let rem = n - rep*s.length; // Obtinen diferenta (daca exista), in exemplul prezent 1
 let aDiferenta = countA(s.slice(0,rem)) //Numarul de a-uri din diferenta
 
 let rezultat = countA(s)*rep + aDiferenta;
