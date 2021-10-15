@@ -1,0 +1,73 @@
+:root {
+    --Font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100%;
+}
+
+    * {
+    box-sizing: border-box;
+}
+
+    body {
+        margin: 0;
+        height: 100%;
+        background-image: url("https://coolwallpapers.me/picsup/5010456-firewatch-sun-trees-mountains-birds-lake-evening-games-hd.jpg");
+        background-size: cover;
+        opacity: 0.9;
+        }
+    
+    h1 {
+        width: 75%;
+        font-family: var(--Font);
+        margin: 2.5vh 0vh 2.5vh 0vh;
+    }
+    
+    .outerContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 7.2% auto;
+        background-image: url("https://webgradients.com/public/webgradients_png/089%20Premium%20White.png");
+        background-size: cover;
+        width: 60%;
+        border: 0.3vh solid black;
+        
+    }
+
+    .innerContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 1vh;
+        padding: 5vh;
+    }
+
+    .top { 
+        height: 32vh;
+        width: 24vw;
+        outline: 0.5vh solid black;
+        margin-bottom: 2.5vh;
+        cursor: pointer;
+    }
+
+
+    .top:hover {
+        box-shadow: 0 16px 20px 0 rgba(0,0,0,0.4), 0 20px 60px 0 rgba(0,0,0,0.4);
+        transition: box-shadow 0.5s;
+        transform: scale(1.1);
+        transition: transform 0.5s;
+    }
+
+    .bottom1, .bottom2, .bottom3, .bottom4 {
+        height: 16vh;
+        width: 12vw;
+        outline: 0.25vh solid black;
+        cursor: pointer;
+    }
+
+    .bottom1:hover, .bottom2:hover, .bottom3:hover, .bottom4:hover {
+        box-shadow: 0 16px 20px 0 rgba(0,0,0,0.4), 0 20px 60px 0 rgba(0,0,0,0.4);
+        transition: box-shadow 0.5s;
+        transform: scale(1.25);
+        transition: transform 0.5s;
+    }

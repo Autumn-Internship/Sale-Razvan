@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="altGallery.css">
+<title>Image gallery</title>
+<script>
+    function changeOnClick(elem) {
+        let top = document.getElementsByClassName('top')[0];
+        let bottom = document.getElementsByClassName(elem)[0];
+        aux = top.src;
+        top.src = bottom.src;
+        bottom.src = aux;
+    }
+</script>
+</head>
+
+<body>
+<main>
+
+<div class="outerContainer">
+
+<h1>Image gallery</h1>
+<img class="top" src="https://c4.wallpaperflare.com/wallpaper/659/712/892/monochrome-sons-of-anarchy-wallpaper-preview.jpg">
+
+<div class="innerContainer">
+<img class="bottom1" onclick="changeOnClick('bottom1')" src="https://i.pinimg.com/originals/77/24/65/77246590580b184df1dd0dca90d8a4d3.png">
+<img class="bottom2" onclick="changeOnClick('bottom2')" src="https://wallpaperaccess.com/full/2311861.jpg">
+<img class="bottom3" onclick="changeOnClick('bottom3')" src="https://images.hdqwalls.com/wallpapers/vikings-2021-6l.jpg">
+<img class="bottom4" onclick="changeOnClick('bottom4')" src="https://dark.netflix.io/share/global.png">
+</div>
+</div>
+</main>
+</body>
+</html>
